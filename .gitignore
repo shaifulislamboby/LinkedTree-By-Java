@@ -1,0 +1,15 @@
+*.class
+
+# Eclipse Files #
+.project
+.settings
+.classpath
+
+# Mac specific files
+.DS_Store
+
+# junit report folder #
+
+junit/*
+/bin/
+
