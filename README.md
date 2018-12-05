@@ -1,24 +1,22 @@
 # Exercise 05 -- Binary Search Tree
+### Submission Deadline: December 16, 2018 at 3 pm
 
-Welcome to the first Exercise of "Introduction to Computer Science for Engineers" 2018.
-This is a sample repository used for the step-by-step introduction to Github and Github classroom.
+The overall goal of the fifth assignment is to build a *Binary Search Tree* that is able to store data in a `LinkedList`. 
+To this end, make yourself familiar with the Java implementation of `java.util.LinkedList`.
 
-It is structured as any of the repositories for the future assignments. In particular, in contains:
+For solving the tasks, this repository contains:
 
 * a `src` Folder containing the (java) source file `LinkedTree.java` that serves as both, a template and starting point for your solution.
 	
 	**IMPORTANT: Make use of the provided class for your solution. Also, do not change the method signature on your own (there is a good reason for the provided signatures). Otherwise, we will account for a malus (i.e., reducing your points even if the solution is basically correct)!**
 * a `test` folder, containing the tests for the implementation. These tests are implemented by the instructor and can be used by you to improve your code. Also, these tests are kind of initial sanity check for assessing the assignment.
-*Remember that you can run the test file(s) as well to check whether your implementation works correctly.* **Do not touch them!**
+*Remember that you can run the test file(s) as well to check whether your implementation works correctly.* 
+**Run the tests to check whether your solutions work correctly. But do not touch/change them!**
 * some more files needed for handling the project in Eclipse (or for proper push/pull the repository). See the slides for more details. In general, the other files **should not be changed or deleted, if you do not really know what you are doing**!!
 
 In the following, you will find the particular tasks to be solved.
 
-**SUBMISSION DEADLINE: December 10, 2017 at 3 pm**
-
 ---
-The overall goal of this assignment is to build a *Binary Search Tree* that is able to store data in a `LinkedList`. 
-To this end, make yourself familiar with the Java implementation of `java.util.LinkedList`.
 
 
 ## Task 5-01: LinkedTree data structure
@@ -108,7 +106,7 @@ public void postorder (int ind) { … }
 
 public void inorder (int ind) { … }
 ```
-The particular methods should work in the following way:
+The particular methods should work in the following way (regarding the processing part of a node):
 
 `preorder(ind):` perform the preorder traversal for the root of the tree for each node                                      
 **if** ( size of `LinkedList data` is greater than index `ind`)  
