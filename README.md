@@ -3,8 +3,9 @@
 
 The overall goal of the fifth assignment is to build a *Binary Search Tree* that is able to store data in a `LinkedList`.
 A *binary search tree* is defined as binary tree with the requirement that, for each `node N` with `key k`:
-* all nodes in N’s left subtree are *less than k*
-* all nodes in N’s right subtree are *greater than k*
+* all nodes in N’s left subtree have a key *less than k*
+* all nodes in N’s right subtree hve a key *greater than k*
+See also the slides of the last lecture (about trees) for more details on binary search trees!
 
 As prerequiste for this task, make yourself familiar with the Java implementation of `java.util.LinkedList`.
 
@@ -61,7 +62,7 @@ This class allows to create nodes in the form of:
 <tr>
   <td>
 
-Please implement the following function to *insert* the specified `(key, element)` pair in the tree so that the tree *remains a binary tree*.
+Please implement the following function to *insert* the specified `(key, element)` pair in the tree so that the tree *remains a binary search tree*.
 ```
 public void insert(int key, E element){ … }
 ```
@@ -71,7 +72,7 @@ The method should work in the following way:
 &ensp; **if** (a node with the key `k` exist)  
 &ensp; &ensp; add element `e` to the `LinkedList data` associated with the key `k`  
 &ensp; **else**  
-&ensp;&ensp; insert a new `node(key k, element e)` in the binary tree
+&ensp;&ensp; insert a new `node(key k, element e)` in the binary search tree so that it is still a binary search tree.
 
 
 </td>
@@ -80,7 +81,7 @@ The method should work in the following way:
 <tr>
   <td>
   
-  Please implement the following function to search for the specific key in the binary tree.
+  Please implement the following function to search for the specific key in the binary search tree.
   
   ```
   public LinkedList<E> search(int key){ … }
@@ -104,25 +105,28 @@ The method should work in the following way:
  Please implement the following functions to print an element of the `LinkedList data` associated with the keys of the tree, implemented in the previous task, in the order given by a *preorder, postorder and inorder traversal*.
 
 ```
-public void preorder(int ind){ … }
+public LinkedList<E> preorder(int ind){ … }
 
-public void postorder (int ind) { … }
+public LinkedList<E> postorder (int ind) { … }
 
-public void inorder (int ind) { … }
+public LinkedList<E> inorder (int ind) { … }
 ```
 The particular methods should work in the following way (regarding the processing part of a node):
 
-`preorder(ind):` perform the preorder traversal for the root of the tree for each node                                      
+`preorder(ind):` perform the preorder traversal, starting at the root of the tree. Then, for each node                                      
 **if** ( size of `LinkedList data` is greater than index `ind`)  
-&ensp; &ensp; return the element of the `LinkedList data` having the index `ind`
+&ensp; &ensp; store the element of the `LinkedList data` having the index `ind` in an appropriate data strucutre of type `LinkedList<E>`    
+When the traversal is finished, return the LinkedList, containing the processed elements.
 
 `postorder(ind)`:perform the postorder traversal for the root of the tree for each node                                      
 **if** ( size of `LinkedList data` is greater than index `ind`)             
-&ensp; &ensp; return the element of the `LinkedList data` having the index `ind`
+&ensp; &ensp; store the element of the `LinkedList data` having the index `ind` in an appropriate data strucutre of type `LinkedList<E>`    
+When the traversal is finished, return the LinkedList, containing the processed elements.
 
 `inorder (ind)`:perform the inorder traversal for the root of the tree for each node                                      
 **if** ( size of `LinkedList data` is greater than index `ind`)             
-&ensp; &ensp; return the element of the `LinkedList data` having the index `ind`
+&ensp; &ensp; store the element of the `LinkedList data` having the index `ind` in an appropriate data strucutre of type `LinkedList<E>`    
+When the traversal is finished, return the LinkedList, containing the processed elements.
 
 </td>
   <td>4 Points</td>
