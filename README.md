@@ -1,8 +1,12 @@
 # Exercise 05 -- Binary Search Tree
 ### Submission Deadline: December 16, 2018 at 3 pm
 
-The overall goal of the fifth assignment is to build a *Binary Search Tree* that is able to store data in a `LinkedList`. 
-To this end, make yourself familiar with the Java implementation of `java.util.LinkedList`.
+The overall goal of the fifth assignment is to build a *Binary Search Tree* that is able to store data in a `LinkedList`.
+A *binary search tree* is defined as binary tree with the requirement that, for each `node N` with `key k`:
+* all nodes in N’s left subtree are *less than k*
+* all nodes in N’s right subtree are *greater than k*
+
+As prerequiste for this task, make yourself familiar with the Java implementation of `java.util.LinkedList`.
 
 For solving the tasks, this repository contains:
 
