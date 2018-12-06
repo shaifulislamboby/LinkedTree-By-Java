@@ -4,10 +4,10 @@
 The overall goal of the fifth assignment is to build a *Binary Search Tree* that is able to store data in a `LinkedList`.
 A *binary search tree* is defined as binary tree with the requirement that, for each `node N` with `key k`:
 * all nodes in N’s left subtree have a key *less than k*
-* all nodes in N’s right subtree hve a key *greater than k*
+* all nodes in N’s right subtree hve a key *greater than k*   
 See also the slides of the last lecture (about trees) for more details on binary search trees!
 
-As prerequiste for this task, make yourself familiar with the Java implementation of `java.util.LinkedList`.
+As prerequiste for this task, make yourself also familiar with the Java implementation of `java.util.LinkedList`.
 
 For solving the tasks, this repository contains:
 
@@ -115,18 +115,18 @@ The particular methods should work in the following way (regarding the processin
 
 `preorder(ind):` perform the preorder traversal, starting at the root of the tree. Then, for each node                                      
 **if** ( size of `LinkedList data` is greater than index `ind`)  
-&ensp; &ensp; store the element of the `LinkedList data` having the index `ind` in an appropriate data strucutre of type `LinkedList<E>`    
-When the traversal is finished, return the LinkedList, containing the processed elements.
+&ensp; &ensp; store the element of the `LinkedList data` having the index `ind` in an appropriate data structure of type `LinkedList<E>`    
+When the traversal is finished, return the `LinkedList`, containing the processed elements.
 
 `postorder(ind)`:perform the postorder traversal for the root of the tree for each node                                      
 **if** ( size of `LinkedList data` is greater than index `ind`)             
-&ensp; &ensp; store the element of the `LinkedList data` having the index `ind` in an appropriate data strucutre of type `LinkedList<E>`    
-When the traversal is finished, return the LinkedList, containing the processed elements.
+&ensp; &ensp; store the element of the `LinkedList data` having the index `ind` in an appropriate data structure of type `LinkedList<E>`    
+When the traversal is finished, return the `LinkedList`, containing the processed elements.
 
 `inorder (ind)`:perform the inorder traversal for the root of the tree for each node                                      
 **if** ( size of `LinkedList data` is greater than index `ind`)             
-&ensp; &ensp; store the element of the `LinkedList data` having the index `ind` in an appropriate data strucutre of type `LinkedList<E>`    
-When the traversal is finished, return the LinkedList, containing the processed elements.
+&ensp; &ensp; store the element of the `LinkedList data` having the index `ind` in an appropriate data structure of type `LinkedList<E>`    
+When the traversal is finished, return the `LinkedList`, containing the processed elements.
 
 </td>
   <td>4 Points</td>
@@ -161,7 +161,7 @@ Within the `main` method (in class `Main.java`), please create the binary search
 
 <img src="./pics/tree.jpg" width="75%" text-align="center"/>
 
-What is the output of the following Java code for the binary tree :
+What is the output of the following Java code for the binary tree (when printed to standard output):
 ```
    tree.inorderPrint(0);
    
