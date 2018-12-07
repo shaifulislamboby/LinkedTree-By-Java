@@ -5,7 +5,8 @@ The overall goal of the fifth assignment is to build a *Binary Search Tree* that
 A *binary search tree* is defined as binary tree with the requirement that, for each `node N` with `key k`:
 * all nodes in N’s left subtree have a key *less than k*
 * all nodes in N’s right subtree hve a key *greater than k*   
-See also the slides of the last lecture (about trees) for more details on binary search trees!
+
+See also the slides of the last lecture (about trees) for more details on binary search trees and the respective operations!
 
 As prerequiste for this task, make yourself also familiar with the Java implementation of `java.util.LinkedList`.
 
@@ -140,7 +141,7 @@ When the traversal is finished, return the `LinkedList`, containing the processe
 <tr>
   <td>
 
-Please implement the following function to *delete* the node containing the `(key, element)` pair with the specified key so that the tree *remains a binary tree*.
+Please implement the following function to *delete* the node containing the `(key, element)` pair with the specified key so that the tree *remains a binary search tree*.
 ```
 public LinkedList<E> delete(int key){ … }
 ```
@@ -161,7 +162,7 @@ Within the `main` method (in class `Main.java`), please create the binary search
 
 <img src="./pics/tree.jpg" width="75%" text-align="center"/>
 
-What is the output of the following Java code for the binary tree (when printed to standard output):
+What is the output of the following Java code for the binary tree (when printing the result to standard output):
 ```
    tree.inorderPrint(0);
    
